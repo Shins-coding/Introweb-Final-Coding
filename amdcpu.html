@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TECHLOOM - CPUs</title>
+  <link rel="stylesheet" href="cpus.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="header-top">
+      <div class="logo-container">
+        <img src="TECHLOOM LOGO.png" alt="Techloom Logo" class="logo" />
+        <h1>
+          <span class="tech">TECH</span><span class="loom">LOOM</span>
+        </h1>
+      </div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+        <button aria-label="search">🔍</button>
+      </div>
+    </div>
+<nav class="navbar">
+  <ul>
+    <div class="nav-center">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="amdcpu.html">CPUs</a></li>
+      <li><a href="gpus.html">GPUs</a></li>
+      <li><a href="#">Gaming</a></li>
+      <li><a href="#">Brands</a></li>
+    </div>
+    <div class="nav-right">
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">About Us</a></li>
+    </div>
+  </ul>
+</nav>
+
+    <div class="sub-navbar">
+      <button class="subnav-button active">AMD CPU</button>
+      <button class="subnav-button">INTEL CPU</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- AMD Section Intro -->
+    <section class="amd-intro">
+      <img src="amdcpu.jpg" alt="AMD CPU circuit" />
+      <h2>AMD CPU</h2>
+      <p>
+        AMD stands for - <a href="https://en.wikipedia.org/wiki/Advanced_Micro_Devices" target="_blank" rel="noopener noreferrer">Advanced Micro Devices</a>.
+      </p>
+      <p>
+        AMD is a global leader in CPU technology, renowned for delivering exceptional performance and efficiency with its cutting-edge Ryzen processors.
+        Built on innovative Zen architectures, AMD CPUs offer gamers and creators powerful multi-core performance, advanced 3D V-Cache technology,
+        and support for the latest platforms like PCIe 5.0 and DDR5 memory. Whether you’re building a high-end gaming rig or a versatile content creation PC,
+        AMD provides excellent value and industry-leading features to power your next-generation experience.
+      </p>
+    </section>
+
+    <!-- AMD Popular CPU Table -->
+    <section class="cpu-table-section">
+      <h3>List some Popular CPUs</h3>
+      <p>Ryzen 3, 5, 7, 9 Series</p>
+      <table>
+  <thead>
+    <tr>
+      <th>MODEL</th>
+      <th>Cores/Threads</th>
+      <th>Base</th>
+      <th>Boost</th>
+      <th>TDP</th>
+      <th>Integrated Graphics</th>
+      <th>Memory Support</th>
+      <th>PCIe Version</th>
+      <th>Best Use Case</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>AMD Ryzen 3 3100</td><td>4 / 8</td><td>3.6 GHz</td><td>3.9 GHz</td><td>65W</td><td>No</td><td>DDR4</td><td>PCIe 4.0</td><td>Entry/mid gaming</td></tr>
+    <tr><td>AMD Ryzen 3 3200G</td><td>4 / 4</td><td>3.6 GHz</td><td>4.0 GHz</td><td>65W</td><td>Yes</td><td>DDR4</td><td>PCIe 3.0</td><td>Entry-level gaming (iGPU)</td></tr>
+    <tr><td>AMD Ryzen 3 3300X</td><td>4 / 8</td><td>3.8 GHz</td><td>4.3 GHz</td><td>65W</td><td>No</td><td>DDR4</td><td>PCIe 4.0</td><td>Budget gaming</td></tr>
+    <tr><td>AMD Ryzen 3 4100</td><td>4 / 8</td><td>3.8 GHz</td><td>4.0 GHz</td><td>65W</td><td>No</td><td>DDR4</td><td>PCIe 3.0</td><td>Budget desktop</td></tr>
+    <tr><td>AMD Ryzen 5 3600</td><td>6 / 12</td><td>3.6 GHz</td><td>4.2 GHz</td><td>65W</td><td>No</td><td>DDR4</td><td>PCIe 4.0</td><td>Balanced gaming</td></tr>
+    <tr><td>AMD Ryzen 5 5500</td><td>6 / 12</td><td>3.6 GHz</td><td>4.2 GHz</td><td>65W</td><td>Yes</td><td>DDR5</td><td>PCIe 4.0</td><td>Entry-level DDR5 gaming</td></tr>
+    <tr><td>AMD Ryzen 5 5600</td><td>6 / 12</td><td>3.5 GHz</td><td>4.4 GHz</td><td>65W</td><td>No</td><td>DDR4/DDR5</td><td>PCIe 4.0</td><td>Balanced gaming</td></tr>
+    <tr><td>AMD Ryzen 5 5600G</td><td>6 / 12</td><td>3.9 GHz</td><td>4.4 GHz</td><td>65W</td><td>Yes</td><td>DDR4/DDR5</td><td>PCIe 4.0</td><td>Efficient gaming (iGPU)</td></tr>
+    <tr><td>AMD Ryzen 5 5600X</td><td>6 / 12</td><td>3.3 GHz</td><td>4.4 GHz</td><td>105W</td><td>No</td><td>DDR4/DDR5</td><td>PCIe 4.0</td><td>Popular gaming processor</td></tr>
+    <tr><td>AMD Ryzen 5 7500F</td><td>6 / 12</td><td>3.7 GHz</td><td>5.0 GHz</td><td>65W</td><td>No</td><td>DDR5</td><td>PCIe 5.0</td><td>Budget gaming (iGPU)</td></tr>
+    <tr><td>AMD Ryzen 5 7600</td><td>6 / 12</td><td>3.8 GHz</td><td>5.1 GHz</td><td>65W</td><td>No</td><td>DDR5</td><td>PCIe 5.0</td><td>Mid-range gaming</td></tr>
+    <tr><td>Ryzen 7 5700</td><td>8 / 16</td><td>3.7 GHz</td><td>4.6 GHz</td><td>65W</td><td>No</td><td>DDR5</td><td>PCIe 4.0</td><td>Entry-level DDR5 gaming</td></tr>
+    <tr><td>Ryzen 7 5700G</td><td>8 / 16</td><td>3.8 GHz</td><td>4.6 GHz</td><td>65W</td><td>Yes</td><td>DDR5</td><td>PCIe 4.0</td><td>DDR5 budget gaming (iGPU)</td></tr>
+    <tr><td>Ryzen 7 5700X3D</td><td>8 / 16</td><td>3.0 GHz</td><td>4.1 GHz</td><td>105W</td><td>No</td><td>DDR5</td><td>PCIe 4.0</td><td>Efficient gaming (iGPU)</td></tr>
+    <tr><td>Ryzen 7 5800X3D</td><td>8 / 16</td><td>3.4 GHz</td><td>4.5 GHz</td><td>105W</td><td>No</td><td>DDR5</td><td>PCIe 4.0</td><td>Popular gaming processor</td></tr>
+    <tr><td>Ryzen 7 7700</td><td>8 / 16</td><td>3.6 GHz</td><td>5.3 GHz</td><td>105W</td><td>Yes</td><td>DDR5</td><td>PCIe 5.0</td><td>Gaming with 3D V-Cache</td></tr>
+    <tr><td>Ryzen 9 5900X</td><td>12 / 24</td><td>3.7 GHz</td><td>4.8 GHz</td><td>105W</td><td>No</td><td>DDR4</td><td>PCIe 4.0</td><td>Enhanced 2nd gen 8-core CPU</td></tr>
+    <tr><td>Ryzen 9 7900</td><td>8 / 16</td><td>3.6 GHz</td><td>5.4 GHz</td><td>65W</td><td>Yes</td><td>DDR4</td><td>PCIe 5.0</td><td>3rd gen 8-core higher clock CPU</td></tr>
+    <tr><td>Ryzen 9 7900X</td><td>8 / 16</td><td>4.7 GHz</td><td>5.6 GHz</td><td>170W</td><td>Yes</td><td>DDR4</td><td>PCIe 5.0</td><td>3rd gen 8-core overclocking CPU</td></tr>
+    <tr><td>Ryzen 9 7900X3D</td><td>8 / 16</td><td>4.4 GHz</td><td>5.6 GHz</td><td>120W</td><td>Yes</td><td>DDR5</td><td>PCIe 5.0</td><td>Entry-level DDR5 gaming</td></tr>
+    <tr><td>Ryzen 9 7950X3D</td><td>8 / 16</td><td>4.2 GHz</td><td>5.7 GHz</td><td>120W</td><td>Yes</td><td>DDR5</td><td>PCIe 5.0</td><td>Balanced gaming</td></tr>
+    <tr><td>Ryzen 9 9900X3D</td><td>8 / 16</td><td>4.4 GHz</td><td>5.5 GHz</td><td>120W</td><td>Yes</td><td>DDR5</td><td>PCIe 5.0</td><td>DDR5 budget builds (iGPU)</td></tr>
+    <tr><td>Ryzen 9 9950X</td><td>8 / 16</td><td>4.3 GHz</td><td>5.7 GHz</td><td>170W</td><td>Yes</td><td>DDR5</td><td>PCIe 5.0</td><td>Popular gaming processor</td></tr>
+    <tr><td>Ryzen 9 9950X3D</td><td>8 / 16</td><td>4.3 GHz</td><td>5.7 GHz</td><td>170W</td><td>Yes</td><td>DDR5</td><td>PCIe 5.0</td><td>Gaming with 3D V-Cache</td></tr>
+  </tbody>
+</table>
+    </section>
+
+    <!-- Ryzen Series Overview -->
+    <section class="ryzen-overview">
+      <h3>AMD Ryzen Series Overview</h3>
+      <div class="ryzen-category">
+        <h4>Ryzen 3</h4>
+        <ul>
+          <li>Entry-level CPUs designed for budget builds and basic computing.</li>
+          <li>Typically 4 cores, 4 or 8 threads depending on generation.</li>
+          <li>Suitable for casual users, light gaming, and everyday tasks.</li>
+          <li>Some models include integrated Vega graphics for budget-friendly PC builds without a dedicated GPU.</li>
+        </ul>
+        <img src="ryzen 3.webp" alt="Ryzen 3 box" class="product-image" />
+      </div>
+      <div class="ryzen-category">
+        <h4>Ryzen 5</h4>
+        <ul>
+          <li>Mainstream mid-range CPUs focused on a balance of performance and efficiency.</li>
+          <li>Usually 6 cores and 12 threads for strong multi-tasking and gaming.</li>
+          <li>Popular among gamers targeting 1080p to 1440p gaming.</li>
+          <li>Some models come with integrated graphics, but most are paired with discrete GPUs.</li>
+        </ul>
+        <img src="ryzen 5.webp" alt="Ryzen 5 box" class="product-image" />
+      </div>
+      <div class="ryzen-category">
+        <h4>Ryzen 7</h4>
+        <ul>
+          <li>High-performance CPUs with 8 cores and 16 threads.</li>
+          <li>Targeted at enthusiasts, streamers, and content creators needing more multi-thread power.</li>
+          <li>Excellent for gaming at higher resolutions and demanding workflows.</li>
+          <li>Some models have integrated graphics, mainly for APUs or business variants.</li>
+        </ul>
+        <img src="ryzen 7.webp" alt="Ryzen 7 box" class="product-image" />
+      </div>
+      <div class="ryzen-category">
+        <h4>Ryzen 9</h4>
+        <ul>
+          <li>Enthusiast and professional-grade CPUs offering up to 16 cores and 32 threads.</li>
+          <li>Ideal for high-end gaming, 4K and VR, video editing, 3D rendering, and other heavy workloads.</li>
+          <li>Pushes cutting-edge performance, often with higher power consumption.</li>
+          <li>Usually require discrete GPUs; some Pro series include integrated graphics for workstation use.</li>
+        </ul>
+        <img src="ryzen 9.webp" alt="Ryzen 9 box" class="product-image" />
+      </div>
+      <div class="more-info">
+        <h4>More Info</h4>
+        <ul>
+          <li>The first digit after "Ryzen" indicates the generation (e.g. 3 = 3rd gen, 5 = 5th gen, etc).</li>
+          <li>The second digit represents the market segment or performance tier (3 = entry-level, 5 = mainstream, 7 = high-performance, 9 = enthusiast).</li>
+          <li>The last two digits indicate the SKU or model number within that segment and generation.</li>
+          <li>Letters after the number indicate special features or power envelopes, for example:
+            <ul>
+              <li>"X" or "XT" usually means higher clock speeds or enhanced performance.</li>
+              <li>"G" denotes integrated graphics ("APU").</li>
+              <li>"U" or "HS" typically indicate low power/mobile variants.</li>
+              <li>"E" means energy-efficient or lower power consumption variants.</li>
+            </ul>
+          </li>
+        </ul>
+        <p>
+          Learning Ryzen names and numbers is a skill that helps users quickly interpret AMD's processor lineup,
+          making informed decisions for buying, upgrading, or studying CPU capabilities efficiently.
+          It becomes a shorthand to understand generation, power, intended use, and features without needing detailed technical specs each time.
+        </p>
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news">
+      <h3>News</h3>
+      <article>
+        <img src="rdna.png" alt="RDNA Graphics Chiplet" />
+        <h4>AMD Could Be Planning a Multipronged Approach for Future GPUs with Graphics Memory Die Chiplets</h4>
+        <p class="author-date">By Peter Brodsahi - September 6, 2025</p>
+        <p>
+          AMD could introduce a product line based on a one-size-fits-all chiplet approach featuring a multi-use Graphics Memory Die (GMD).
+          New rumors suggest that AMD might be working on an almost modular approach, allowing one particular chiplet to be used in multiple applications...
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Created by Franshin Mendoza - WD202 © 2025</p>
+  </footer>
+</body>
+</html>
