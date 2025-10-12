@@ -178,6 +178,15 @@ main p, .section p {
   color: #0b0b2d;
 }
 
+/* Footer */
+footer {
+  background: #0b0b2d;
+  text-align: center;
+  color: #ccc;
+  padding: 14px 12px;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 900px) {
   main {
     padding: 18px 7px;
