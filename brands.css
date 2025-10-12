@@ -146,7 +146,7 @@ header {
   color: white;
 }
 
-/* === MAIN CONTENT === */
+/* MAIN CONTENT */
 
 .brands-section {
   background-color: #ffffff;
@@ -156,7 +156,7 @@ header {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* === OVERVIEW SECTION === */
+/* OVERVIEW SECTION */
 
 .overview h2 {
   font-size: 1.4rem;
@@ -173,8 +173,7 @@ header {
   color: #333;
 }
 
-/* === BRANDS GRID === */
-
+/* BRANDS GRID */
 .brand-logos h3 {
   font-size: 1.1rem;
   font-weight: 700;
@@ -185,7 +184,7 @@ header {
 .brands-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 60px 80px;           /* adds breathing room for bigger logos */
+  gap: 60px 80px;           
   justify-items: center;
   align-items: center;
   max-width: 1000px;
@@ -194,10 +193,10 @@ header {
 
 
 .brands-grid img {
-  width: 200px;             /* increased logo box width */
-  height: 110px;            /* increased logo box height */
-  object-fit: contain;      /* keeps proportions */
-  object-position: center;  /* centers each logo perfectly */
+  width: 200px;             
+  height: 110px;            
+  object-fit: contain;      
+  object-position: center;  
   display: block;
   transition: transform 0.3s ease;
 }
@@ -206,13 +205,11 @@ header {
   transform: scale(1.05);
 }
 
-
-/* === FOOTER === */
-
-.footer {
-  border-top: 1px solid #ccc;
-  margin-top: 80px;
-  padding: 15px 0;
-  font-size: 0.85rem;
-  color: #333;
+/* Footer */
+footer {
+  background: #0b0b2d;
+  text-align: center;
+  color: #ccc;
+  padding: 14px 12px;
+  font-size: 0.9rem;
 }
