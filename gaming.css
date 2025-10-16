@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  background: #0b0b2d;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.35);
+  user-select: none;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 2vw;
+  background: #fff;
+  border-bottom: 2px solid #0b0b2d;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  max-height: 44px;
+}
+
+.logo-container h1 {
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+.tech {
+  color: black;
+}
+
+.loom {
+  color: red;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background: black;
+  padding: 5px 12px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  width: 170px;
+  background: transparent;
+  padding: 6px 8px;
+}
+
+.search-bar button {
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 1.15rem;
+}
+
+/* Navigation */
+.nav-bar {
+  background-color: #0b0b2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.nav-bar a:hover,
+.nav-bar a.active {
+  color: #ff0000;
+}
+
+/* Main content container */
+main {
+    max-width: 820px;
+    margin: 40px auto 0;
+    padding: 16px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(36,60,72,0.07);
+    border-radius: 14px;
+}
+
+/* Content Ideas Section */
+.content-ideas {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content-img {
+    width: 420px; /* increased from 320px */
+    max-width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px rgba(50,100,200,0.12);
+    margin-bottom: 30px;
+}
+
+/* Text alignment inside ideas */
+.ideas-list {
+    text-align: left;
+    margin-top: 0;
+}
+
+.ideas-list h3 {
+    color: #2754c4;
+    margin-bottom: 8px;
+    margin-top: 28px;
+    font-size: 1.15em;
+}
+
+.ideas-list p {
+    margin: 0 0 16px 0;
+    color: #374151;
+    font-size: 1em;
+}
+
+/* CPU and GPU Combos Section */
+.combos {
+    margin-bottom: 24px;
+}
+
+.combos h2 {
+    text-align: center;
+    color: #3b85db;
+    margin-bottom: 26px;
+    margin-top: 0;
+}
+
+.combo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.combo {
+    background: #f1f7fc;
+    border-left: 5px solid #3b85db;
+    padding: 14px 16px;
+    border-radius: 8px;
+    box-shadow: 0 1.5px 6px rgba(87,130,179,0.09);
+}
+
+.combo strong {
+    color: #223388;
+}
+
+.combo em {
+    color: #007979;
+    font-style: normal;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #232945;
+    color: #fff;
+    padding: 20px 0 18px 0;
+    margin-top: 64px;
+    border-top: 1px solid #3e4767;
+}
+
+.footer-content {
+    font-size: 1em;
+    opacity: 0.93;
+}
+
+/* Social and email icon links in footer */
+.footer-content a {
+    margin: 0 10px;
+    font-size: 1.4em;
+    text-decoration: none;
+    color: #fff;
+    vertical-align: middle;
+    transition: opacity 0.15s;
+}
+
+.footer-content a:hover {
+    opacity: 0.7;
+}
+
+
+@media (max-width: 900px) {
+    main {
+        max-width: 98vw;
+        margin: 16px 2vw;
+        padding: 8px;
+    }
+    .header-top, .nav-bar {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .content-img {
+        width: 96vw;
+    }
+}
