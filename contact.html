@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TECHLOOM | Home</title>
-  <link rel="stylesheet" href="contact.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AMD CPU - TECHLOOM</title>
+  <link rel="stylesheet" href="contact.css" />
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <!-- Top bar: logo, name, and search -->
+
+<header>
+  <!-- Top bar: logo + search -->
  <div class="header-top">
       <div class="logo-container">
         <img src="TECHLOOM LOGO.png" alt="Techloom Logo" class="logo" />
@@ -22,49 +22,47 @@
         <button aria-label="search">🔍</button>
       </div>
     </div>>
-    <!-- Navigation -->
+
+  <!-- Main Navigation -->
 <nav class="nav-bar">
   <ul>
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="amdcpu.html">CPUs</a></li>
-    <li><a href="gpus.html">GPUs</a></li>
+    <li><a href="amdgpu.html">GPUs</a></li>
     <li><a href="gaming.html">Gaming</a></li>
     <li><a href="brands.html">Brands</a></li>
     <li><a href="contact.html">Contact Us</a></li>
     <li><a href="about.html">About Us</a></li>
   </ul>
 </nav>
-  </header>
-<main class="contact-main">
-  <form class="contact-form" action="#" method="post">
-    <div class="name-fields">
-      <div class="form-group">
-        <label for="firstName">First Name</label>
-        <input type="text" id="firstName" name="firstName" value="Franshin" />
-      </div>
-      <div class="form-group">
-        <label for="lastName">Last Name</label>
-        <input type="text" id="lastName" name="lastName" value="Mendoza" />
-      </div>
-    </div>
-    <div class="form-group full-width">
+</header>
+<main>
+  <section class="section contact">
+    <h2 class="section-title">Contact Us</h2>
+    <form action="#" method="post" class="contact-form">
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" placeholder="Your first name" required />
+
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" placeholder="Your last name" required />
+
       <label for="email">Email</label>
-      <input type="email" id="email" name="email" value="franshinmendoza@gmail.com" />
-    </div>
-    <div class="form-group full-width">
+      <input type="email" id="email" name="email" placeholder="Your email address" required />
+
       <label for="message">Message</label>
-      <textarea id="message" name="message" rows="8">blah blah blah blah blah</textarea>
-    </div>
-    <button type="submit" class="submit-btn">Submit</button>
-  </form>
+      <textarea id="message" name="message" placeholder="Write your message here" rows="6" required></textarea>
+
+      <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+  </section>
 </main>
 
 
   <footer>
     <div class="footer-content">
-      <a href="https://facebook.com/YOUR_USERNAME" target="_blank" aria-label="Facebook">Facebook</a>
-      <a href="https://instagram.com/YOUR_USERNAME" target="_blank" aria-label="Instagram">Instagram</a>
-      <a href="mailto:your@email.com" aria-label="Email">Email</a>
+      <a href="https://www.facebook.com/franshin.mendoza.2024" target="_blank" aria-label="Facebook">Facebook</a>
+      <a href="https://www.instagram.com/_.shineii" target="_blank" aria-label="Instagram">Instagram</a>
+      <a href="shingaming082005@gmail.com" aria-label="Email">Email</a>
       <br><br>
       Created by Franshin Mendoza - WD202 @ 2025
     </div>
