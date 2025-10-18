@@ -108,3 +108,102 @@ header {
 .nav-bar a.active {
   color: #ff0000;
 }
+
+/* Main content area */
+main {
+  max-width: 1200px;
+  margin: 48px auto 60px auto;
+  padding: 36px 32px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Sections containing content */
+.section {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 64px auto;
+}
+
+/* Paragraphs */
+main p, .section p {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.09rem;
+  line-height: 1.7;
+  text-align: justify;
+  color: #232323;
+  margin-bottom: 18px;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Images */
+.section img {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Section titles */
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.combo-list {
+  display: grid;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.combo-item {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.combo-item h3 {
+  margin-bottom: 5px;
+  color: #0b0b2d;
+}
+
+/* Footer */
+footer {
+  background: #0b0b2d;
+  text-align: center;
+  color: #ccc;
+  padding: 14px 12px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  main {
+    padding: 18px 7px;
+    margin: 28px auto 38px auto;
+  }
+  .section {
+    max-width: 100%;
+    padding: 0 4px;
+    margin-bottom: 38px;
+  }
+  main p, .section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+  .section img {
+    max-width: 100%;
+    margin: 0 auto 16px;
+  }
+}
