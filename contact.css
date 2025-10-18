@@ -51,6 +51,7 @@ header {
 .loom {
   color: red;
 }
+
 /* Search bar */
 .search-bar {
   display: flex;
@@ -78,24 +79,22 @@ header {
   font-size: 1.15rem;
 }
 
-
-
-/* Main nav bar */
+/* Navigation */
 .nav-bar {
   background-color: #0b0b2d;
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-bar ul {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   list-style: none;
   gap: 40px;
-  margin: 0; 
-  padding-bottom: 20px; 
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .nav-bar a {
@@ -109,79 +108,51 @@ header {
 .nav-bar a.active {
   color: #ff0000;
 }
-.contact-main {
-  max-width: 900px;
-  margin: 60px auto 0 auto;
-  padding: 0 20px;
-  font-family: 'Roboto', sans-serif;
-  color: #222;
-}
 
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  max-width: 500px;
+  margin: 0 auto;
+  gap: 16px;
 }
 
-.name-fields {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-width: 240px;
-}
-
-.form-group.full-width {
-  flex-basis: 100%;
-}
-
-label {
-  margin-bottom: 7px;
-  font-size: 0.99em;
-  color: #333;
-  font-weight: 500;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  background-color: #bababa;
-  border: none;
-  padding: 14px 18px;
-  font-size: 1rem;
-  border-radius: 0;
-  font-family: 'Roboto', sans-serif;
-  color: #222;
+.contact-form label {
+  font-weight: 600;
+  color: #0b0b2d;
   margin-bottom: 6px;
 }
 
-textarea {
-  min-height: 140px;
+.contact-form input,
+.contact-form textarea {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
   resize: vertical;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #ff0000;
+  border-color: #ff0000;
 }
 
 .submit-btn {
-  margin-top: 10px;
-  background-color: #191d3a;
+  background-color: #0b0b2d;
   color: white;
-  font-size: 1.09rem;
-  font-weight: 500;
-  padding: 13px 0;
-  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 12px;
   border: none;
-  border-radius: 0;
-  width: 100%;
-  display: block;
-  transition: background-color 0.3s;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .submit-btn:hover {
-  background-color: #252950;
+  background-color: #ff0000;
 }
 
 /* Footer */
