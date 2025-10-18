@@ -51,7 +51,6 @@ header {
 .loom {
   color: red;
 }
-
 /* Search bar */
 .search-bar {
   display: flex;
@@ -79,22 +78,24 @@ header {
   font-size: 1.15rem;
 }
 
-/* Navigation */
+
+
+/* Main nav bar */
 .nav-bar {
   background-color: #0b0b2d;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; 
+  align-items: center; 
 }
 
 .nav-bar ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; 
+  align-items: center; 
   list-style: none;
   gap: 40px;
-  margin: 0;
-  padding-bottom: 20px;
+  margin: 0; 
+  padding: 19px; 
 }
 
 .nav-bar a {
@@ -113,7 +114,7 @@ header {
 main {
   max-width: 1200px;
   margin: 48px auto 60px auto;
-  padding: 36px 32px;
+  padding: 36px 40px;
   background: #fff;
   border-radius: 10px;
   display: flex;
@@ -141,6 +142,10 @@ main p, .section p {
   margin-right: auto;
 }
 
+.section-content ul {
+  padding-left: 100px;
+  padding-right: 100px;
+}
 /* Images */
 .section img {
   width: 100%;
@@ -178,6 +183,15 @@ main p, .section p {
   color: #0b0b2d;
 }
 
+figcaption {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
 /* Footer */
 footer {
   background: #0b0b2d;
@@ -192,6 +206,7 @@ footer {
     padding: 18px 7px;
     margin: 28px auto 38px auto;
   }
+  
   .section {
     max-width: 100%;
     padding: 0 4px;
@@ -206,4 +221,258 @@ footer {
     max-width: 100%;
     margin: 0 auto 16px;
   }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Header fixes */
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-top {
+    width: 100%;
+    padding: 10px 15px;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .logo-container {
+    flex: 0 0 auto;
+    max-width: 60%;
+  }
+
+  .logo {
+    max-height: 32px;
+  }
+
+  .logo-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .search-bar {
+    flex: 1;
+    min-width: 120px;
+    max-width: 35%;
+  }
+
+  .search-bar input {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  .nav-bar {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 3px 15px;
+    background: #0b0b2d;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .nav-bar::-webkit-scrollbar {
+    height: 2px;
+  }
+
+  .nav-bar::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 2px;
+  }
+
+  .nav-bar::-webkit-scrollbar-track {
+    background: #0b0b2d;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px;
+    padding: 8px 0;
+    margin: 0;
+    width: max-content;
+    min-width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-bar li {
+    flex: 0 0 auto;
+    display: block;
+  }
+
+  .nav-bar li:first-child {
+    margin-left: 0;
+  }
+
+  .nav-bar a {
+    font-size: 0.95rem;
+    padding: 10px 10px;
+    white-space: nowrap;
+    display: block;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .nav-bar a:hover,
+  .nav-bar a.active {
+    color: #ff0000;
+  }
+
+  /* Keep the rest of your mobile styles */
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-top {
+    width: 100%;
+    padding: 10px 15px;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .logo-container {
+    flex: 0 0 auto;
+    max-width: 60%;
+  }
+
+  .logo {
+    max-height: 32px;
+  }
+
+  .logo-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .search-bar {
+    flex: 1;
+    min-width: 120px;
+    max-width: 35%;
+  }
+
+  .search-bar input {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  main {
+    width: 100%;
+    margin: 20px auto;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .section-content ul {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .section-content li {
+    padding-bottom: 20px;
+  }
+  .section {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+
+  .section img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin: 0 auto;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  .combo-list {
+    gap: 15px;
+  }
+
+  .combo-item {
+    padding: 15px;
+  }
+
+  main p, .section p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
+
+    figcaption {
+        font-size: 0.8rem;
+        margin-top: 6px;
+    }
+
+
+/* Additional fix for very small screens */
+@media (max-width: 480px) {
+  .header-top {
+    padding: 8px 10px;
+  }
+
+  .logo-container h1 {
+    font-size: 1.1rem;
+  }
+
+  .search-bar {
+    min-width: 100px;
+  }
+
+  .search-bar input {
+    font-size: 0.85rem;
+  }
+
+  .nav-bar ul {
+    gap: 15px;
+  }
+
+  .nav-bar a {
+    font-size: 0.85rem;
+  }
+
+  main {
+    padding: 10px;
+    margin: 15px auto;
+  }
+    figcaption {
+        font-size: 0.75rem;
+        margin-top: 4px;
+    }
 }
