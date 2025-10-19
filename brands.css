@@ -4,10 +4,26 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #fff;
   color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main Content Wrapper */
+main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 2rem auto 3rem;
+  padding: 0 20px;
+  padding-top: 180px;
 }
 
 /* Header */
@@ -51,6 +67,7 @@ header {
 .loom {
   color: red;
 }
+
 /* Search bar */
 .search-bar {
   display: flex;
@@ -78,8 +95,6 @@ header {
   font-size: 1.15rem;
 }
 
-
-
 /* Main nav bar */
 .nav-bar {
   background-color: #0b0b2d;
@@ -95,7 +110,7 @@ header {
   list-style: none;
   gap: 40px;
   margin: 0; 
-  padding-bottom: 20px; 
+  padding: 19px; 
 }
 
 .nav-bar a {
@@ -110,70 +125,294 @@ header {
   color: #ff0000;
 }
 
-/* MAIN CONTENT */
-
+/* Brands Section */
 .brands-section {
-  background-color: #ffffff;
-  color: #000000;
   text-align: center;
-  padding: 40px 20px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* OVERVIEW SECTION */
+.overview {
+  margin-bottom: 3rem;
+}
 
 .overview h2 {
-  font-size: 1.4rem;
-  font-weight: 700;
+  color: #cc0000;
   margin-bottom: 15px;
-  color: #000;
+  font-size: 2rem;
 }
 
 .overview p {
-  max-width: 700px;
-  margin: 0 auto 60px;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   line-height: 1.6;
   color: #333;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-/* BRANDS GRID */
 .brand-logos h3 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  margin-bottom: 35px;
-  color: #000;
+  color: #cc0000;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
 }
 
 .brands-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 60px 80px;           
-  justify-items: center;
-  align-items: center;
-  max-width: 1000px;
+  gap: 30px;
   margin: 0 auto;
+  max-width: 1000px;
 }
 
-
 .brands-grid img {
-  width: 200px;             
-  height: 110px;            
-  object-fit: contain;      
-  object-position: center;  
-  display: block;
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  padding: 10px;
+  border-radius: 5px;
   transition: transform 0.3s ease;
 }
 
 .brands-grid img:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
 }
 
-/* Footer */
+/* Footer - Now sticks to bottom */
 footer {
   background: #0b0b2d;
   text-align: center;
   color: #ccc;
   padding: 14px 12px;
   font-size: 0.9rem;
+  margin-top: auto; /* This pushes footer to bottom */
+  width: 100%;
+}
+
+/* === Tablet Media Query (900px) === */
+@media (max-width: 900px) {
+  main {
+    max-width: 95%;
+    margin: 1rem auto 2rem;
+    padding: 0 15px;
+    padding-top: 160px;
+  }
+
+  .header-top {
+    padding: 8px 15px;
+  }
+
+  .logo-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .search-bar input {
+    width: 150px;
+  }
+
+  .nav-bar ul {
+    gap: 30px;
+    padding-bottom: 15px;
+  }
+
+  .overview h2 {
+    font-size: 1.7rem;
+  }
+
+  .overview p {
+    font-size: 1rem;
+  }
+
+  .brand-logos h3 {
+    font-size: 1.5rem;
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+
+  .brands-grid img {
+    height: 100px;
+    padding: 8px;
+  }
+}
+
+/* === Mobile Media Query (768px) === */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Header fixes */
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-top {
+    width: 100%;
+    padding: 10px 15px;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .logo-container {
+    flex: 0 0 auto;
+    max-width: 60%;
+  }
+
+  .logo {
+    max-height: 32px;
+  }
+
+  .logo-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .search-bar {
+    flex: 1;
+    min-width: 120px;
+    max-width: 35%;
+  }
+
+  .search-bar input {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  /* Navigation */
+  .nav-bar {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 3px 15px;
+    background: #0b0b2d;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .nav-bar::-webkit-scrollbar {
+    height: 2px;
+  }
+
+  .nav-bar::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 2px;
+  }
+
+  .nav-bar::-webkit-scrollbar-track {
+    background: #0b0b2d;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px;
+    padding: 8px 0;
+    margin: 0;
+    width: max-content;
+    min-width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-bar li {
+    flex: 0 0 auto;
+    display: block;
+  }
+
+  .nav-bar a {
+    font-size: 0.95rem;
+    padding: 10px 10px;
+    white-space: nowrap;
+    display: block;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+    text-align: center;
+  }
+
+  .nav-bar a:hover,
+  .nav-bar a.active {
+    color: #ff0000;
+  }
+
+  /* Main Content */
+  main {
+    max-width: 100%;
+    margin: 0.5rem auto 1.5rem;
+    padding: 0 10px;
+    padding-top: 140px;
+  }
+
+  .overview h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+  }
+
+  .overview p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .brand-logos h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .brands-grid img {
+    height: 80px;
+    padding: 5px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 12px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+/* === Small Mobile Devices (480px) === */
+@media (max-width: 480px) {
+  .nav-bar ul {
+    gap: 20px;
+  }
+
+  .nav-bar a {
+    font-size: 0.85rem;
+    padding: 8px 8px;
+  }
+
+  main {
+    padding-top: 130px;
+  }
+
+  .overview h2 {
+    font-size: 1.3rem;
+  }
+
+  .overview p {
+    font-size: 0.9rem;
+  }
+
+  .brand-logos h3 {
+    font-size: 1.2rem;
+  }
+
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .brands-grid img {
+    height: 70px;
+    padding: 5px;
+  }
 }
