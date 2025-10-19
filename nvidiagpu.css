@@ -52,6 +52,7 @@ header {
 .loom {
   color: red;
 }
+
 /* Search bar */
 .search-bar {
   display: flex;
@@ -79,8 +80,6 @@ header {
   font-size: 1.15rem;
 }
 
-
-
 /* Main nav bar */
 .nav-bar {
   background-color: #0b0b2d;
@@ -96,7 +95,7 @@ header {
   list-style: none;
   gap: 40px;
   margin: 0; 
-  padding-bottom: 20px; 
+  padding: 19px; 
 }
 
 .nav-bar a {
@@ -283,7 +282,7 @@ tbody tr:hover {
 .news h3 {
   text-align: center;
   font-weight: 700;
-  color: #cc0000;
+  color: #4aa342;
   margin-bottom: 14px;
 }
 
@@ -329,4 +328,326 @@ footer {
   color: #ccc;
   padding: 14px 12px;
   font-size: 0.9rem;
+}
+
+/* === Tablet Media Query (900px) === */
+@media (max-width: 900px) {
+  main {
+    max-width: 95%;
+    margin: 1rem auto 2rem;
+    padding: 0 15px;
+    padding-top: 160px;
+  }
+
+  .header-top {
+    padding: 8px 15px;
+  }
+
+  .logo-container h1 {
+    font-size: 1.5rem;
+  }
+
+  .search-bar input {
+    width: 150px;
+  }
+
+  .nav-bar ul {
+    gap: 30px;
+    padding-bottom: 15px;
+  }
+
+  .sub-nav-bar {
+    max-width: 320px;
+    margin: 5px auto 20px;
+  }
+
+  /* Table adjustments */
+  table {
+    font-size: 0.85rem;
+  }
+
+  th, td {
+    padding: 7px 10px;
+  }
+
+  /* GPU overview adjustments */
+  .gpu-overview {
+    margin: 30px auto 38px;
+    padding: 0 15px;
+  }
+
+  .gpu-overview h3 {
+    font-size: 1.4rem;
+  }
+
+  .gpu-overview h4 {
+    font-size: 1.1rem;
+  }
+
+  .gpu-overview p {
+    font-size: 0.95rem;
+  }
+
+  .gpu-overview ul {
+    margin-left: 20px;
+  }
+
+  .gpu-overview ul li {
+    font-size: 0.95rem;
+  }
+}
+
+/* === Mobile Media Query (768px) === */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+  }
+
+  /* Header fixes */
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-top {
+    width: 100%;
+    padding: 10px 15px;
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .logo-container {
+    flex: 0 0 auto;
+    max-width: 60%;
+  }
+
+  .logo {
+    max-height: 32px;
+  }
+
+  .logo-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .search-bar {
+    flex: 1;
+    min-width: 120px;
+    max-width: 35%;
+  }
+
+  .search-bar input {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 5px;
+  }
+
+  /* Navigation */
+  .nav-bar {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 3px 15px;
+    background: #0b0b2d;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .nav-bar::-webkit-scrollbar {
+    height: 2px;
+  }
+
+  .nav-bar::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 2px;
+  }
+
+  .nav-bar::-webkit-scrollbar-track {
+    background: #0b0b2d;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px;
+    padding: 8px 0;
+    margin: 0;
+    width: max-content;
+    min-width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav-bar li {
+    flex: 0 0 auto;
+    display: block;
+  }
+
+  .nav-bar a {
+    font-size: 0.95rem;
+    padding: 10px 10px;
+    white-space: nowrap;
+    display: block;
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+    text-align: center;
+  }
+
+  .nav-bar a:hover,
+  .nav-bar a.active {
+    color: #ff0000;
+  }
+
+  /* Sub Navigation */
+  .sub-nav-bar {
+    max-width: 280px;
+    margin: 3px auto 15px;
+    padding: 6px 0;
+  }
+
+  .sub-nav-bar ul {
+    gap: 8px;
+  }
+
+  .sub-nav-bar a {
+    padding: 6px 18px;
+    font-size: 0.9rem;
+  }
+
+  /* Main Content */
+  main {
+    max-width: 100%;
+    margin: 0.5rem auto 1.5rem;
+    padding: 0 10px;
+    padding-top: 140px;
+  }
+
+  .nvidia-intro h2 {
+    font-size: 1.4rem;
+  }
+
+  .nvidia-intro p {
+    font-size: 0.95rem;
+    text-align: left;
+  }
+
+  /* Table Mobile Styles */
+  .gpu-table-section {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  table {
+    font-size: 0.75rem;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th, td {
+    padding: 6px 8px;
+  }
+
+  /* GPU Overview Mobile */
+  .gpu-overview {
+    margin: 20px auto 30px;
+    padding: 0 10px;
+  }
+
+  .gpu-overview h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+
+  .gpu-overview h4 {
+    font-size: 1.1rem;
+  }
+
+  .gpu-overview p {
+    font-size: 0.9rem;
+    margin-bottom: 18px;
+  }
+
+  .gpu-overview ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .gpu-overview ul li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .gpu-overview ul ul {
+    margin-left: 15px;
+  }
+
+  /* News Section Mobile */
+  .news {
+    margin-top: 40px;
+  }
+
+  .news article {
+    padding: 12px 15px;
+  }
+
+  .news h4 {
+    font-size: 1rem;
+  }
+
+  .news p {
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 12px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+/* === Small Mobile Devices (480px) === */
+@media (max-width: 480px) {
+  .nav-bar ul {
+    gap: 20px;
+  }
+
+  .nav-bar a {
+    font-size: 0.85rem;
+    padding: 8px 8px;
+  }
+
+  .sub-nav-bar {
+    max-width: 250px;
+  }
+
+  .sub-nav-bar a {
+    padding: 5px 15px;
+    font-size: 0.85rem;
+  }
+
+  main {
+    padding-top: 130px;
+  }
+
+  th, td {
+    padding: 4px 6px;
+    font-size: 0.7rem;
+  }
+
+  .gpu-overview h3 {
+    font-size: 1.2rem;
+  }
+
+  .gpu-overview h4 {
+    font-size: 1rem;
+  }
+
+  .gpu-overview p,
+  .gpu-overview ul li {
+    font-size: 0.85rem;
+  }
 }
